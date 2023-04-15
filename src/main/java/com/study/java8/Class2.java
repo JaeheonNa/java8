@@ -29,6 +29,8 @@ public class Class2 {
         Consumer<T>             : 리턴 타입이 void인 함수형 인터페이스.
         Supplier<T>             : 입력 인자 없이 T 타입 값을 리턴.
         Predicate<T>            : 입력 인자를 받아서 boolean을 리턴.
+        UnaryOperator<T>        : 입력 타입과 리턴 타입이 같은 경우 사용. Function을 상속 받음.
+        BinaryOperator<T>       : 두 개의 입력 타입과 하나의 리턴 타입이 모두 같은 경우 사용.
          */
     }
 }
