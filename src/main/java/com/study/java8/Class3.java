@@ -16,9 +16,11 @@ public class Class3 {
         // 메소드 레퍼런스 사용.
         // :: <- 메소드 레퍼런스.
         // T::m <- T 클래스의 m 메소드를 함수로 쓰겠다는 뜻.
+        // 클래스로 접근할 때 사용하려는 메소드는 static이어야 함.
         UnaryOperator<String> hi = Greeting::hi;
         System.out.println(hi.apply("Javis"));
 
+        // 인스턴스로 접근하는 메소드는 static이 아니어도 됨.
         Greeting greeting = new Greeting();
         UnaryOperator<String> hello = greeting::hello;
         System.out.println(hello.apply("Javis"));
