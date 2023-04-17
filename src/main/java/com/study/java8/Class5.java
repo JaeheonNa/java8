@@ -39,7 +39,7 @@ public class Class5 {
         System.out.println("====");
 
         System.out.println("==Sort(Reference Method)==");
-        Comparator<String> string = String::compareToIgnoreCase;
+        Comparator<String> string = String::compareToIgnoreCase; // String 클래스의 compareToIgnoreCase 메소드를 Comparator함수형 인터페이스의 구현체로 쓰겠다.
         names.sort(string.reversed()); // 역순으로 정렬.
         names.forEach(System.out::println);
         System.out.println("====");
