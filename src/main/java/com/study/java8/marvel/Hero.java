@@ -1,4 +1,7 @@
-package com.study.java8;
+package com.study.java8.marvel;
+
+import java.util.List;
+import java.util.Optional;
 
 public class Hero {
     public String getName() {
@@ -37,6 +40,16 @@ public class Hero {
     private String team;
     private String species;
     private String gender;
+
+    public Optional<Ability> getAbilities() {
+        return Optional.ofNullable(abilities);
+    }
+
+    public void setAbilities(Ability abilities) {
+        this.abilities = abilities;
+    }
+
+    private Ability abilities;
 
     public Hero(String name, String team, String species, String gender) {
         this.name = name;
