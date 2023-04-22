@@ -1,7 +1,6 @@
 package com.study.java8;
 
-// Concurrent 프로그래밍(java8 이전)
-/*
+/*Concurrent 프로그래밍(java8 이전)
     Concurrent 소프트웨어란, 동시에 여러 작업을 할 수 있는 소프트웨어.
     Java에서는 멀티 프로세싱과 멀티 스레드로 지원.
     멀티 스레딩은 실행 순서 보장이 안 됨.
