@@ -46,36 +46,36 @@ public class Class13 {
 
         System.out.println();
 
-        System.out.println("#### 리턴이 없는 CompletableFuture의 후속 작업 : Start ####");
+        System.out.println("#### 리턴이 없는 CompletableFuture의 후속 작업(콜백) : Start ####");
         CompletableFuture cf_5 = CompletableFuture.supplyAsync(() -> {
             return Thread.currentThread().getName() + " : supplyAsync()"; // <-- 이 작업은 sub 스레드에서 작업.
         }).thenAccept((s) -> {
             System.out.println(s + "\n" + Thread.currentThread().getName() + " : thenAccept()"); // <-- 이 작업은 main 스레드에서 작업.
         });
         cf_5.get();
-        System.out.println("#### 리턴이 없는 CompletableFuture의 후속 작업 : End ####");
+        System.out.println("#### 리턴이 없는 CompletableFuture의 후속 작업(콜백) : End ####");
 
         System.out.println();
 
-        System.out.println("#### 리턴이 있는 CompletableFuture의 후속 작업 : Start ####");
+        System.out.println("#### 리턴이 있는 CompletableFuture의 후속 작업(콜백) : Start ####");
         CompletableFuture cf_6 = CompletableFuture.supplyAsync(() -> {
             return Thread.currentThread().getName() + " : supplyAsync()"; // <-- 이 작업은 sub 스레드에서 작업.
         }).thenApply((s) -> {
             return  s + "\n" + Thread.currentThread().getName() + " : thenApply()"; // <-- 이 작업은 main 스레드에서 작업.
         });
         System.out.println(cf_6.get());
-        System.out.println("#### 리턴이 있는 CompletableFuture의 후속 작업 : End ####");
+        System.out.println("#### 리턴이 있는 CompletableFuture의 후속 작업(콜백) : End ####");
 
         System.out.println();
 
-        System.out.println("#### 리턴 값과 상관 없는 CompletableFuture의 후속 작업 : Start ####");
+        System.out.println("#### 리턴 값과 상관 없는 CompletableFuture의 후속 작업(콜백) : Start ####");
         CompletableFuture<Void> cf_7 = CompletableFuture.supplyAsync(() -> {
             return Thread.currentThread().getName() + " : supplyAsync()"; // <-- 리턴 안 됨.
         }).thenRun(() -> {
             System.out.println(Thread.currentThread().getName() + " : thenRun()");
         });
         cf_7.get();
-        System.out.println("#### 리턴 값과 상관 없는 CompletableFuture의 후속 작업 : End ####");
+        System.out.println("#### 리턴 값과 상관 없는 CompletableFuture의 후속 작업(콜백) : End ####");
 
         System.out.println();
         /*
