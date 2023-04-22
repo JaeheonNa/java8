@@ -18,7 +18,7 @@ import java.util.concurrent.ExecutionException;
         3. get()을 하기 전까지 다른 작업을 할 수 없음.
 
  */
-public class Class14 {
+public class Class14_completableFuture_chaining {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         /*
         Thread 작업 순서를 Chaining 으로 연결하는 방법.

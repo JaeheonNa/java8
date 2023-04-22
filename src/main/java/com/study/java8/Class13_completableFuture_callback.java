@@ -15,7 +15,7 @@ import java.util.concurrent.*;
         3. get()을 하기 전까지 다른 작업을 할 수 없음.
 
  */
-public class Class13 {
+public class Class13_completableFuture_callback {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
 
         System.out.println("#### CompletableFuture에 기본 값 주기 : Start ####");

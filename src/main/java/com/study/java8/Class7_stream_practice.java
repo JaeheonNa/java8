@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 // Stream 연습
-public class Class7 {
+public class Class7_stream_practice {
     public static void main(String[] args){
         Hero ironMan = new Hero("IronMan", "Avengers", "Human", "M");
         Hero spiderMan = new Hero("SpiderMan", "Avengers", "Human", "M");

@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 // Date와 Time
-public class Class9 {
+public class Class9_date_time {
     public static void main(String[] args){
         /* java8 이전의 date 관련 라이브러리
            <Date, Calendar, SimpleDateFormat>

@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 // Stream
 // 연속된 데이터를 처리하는 operation들의 모음.
 // Stream은 한 번만 데이터를 처리함.
-public class Class6 {
+public class Class6_stream {
     public static void main(String[] args){
         List<String> names = new ArrayList<>();
         names.add("IronMan");

@@ -1,8 +1,6 @@
 package com.study.java8;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.*;
 
@@ -12,7 +10,7 @@ import java.util.concurrent.*;
     Callable : return type이 void인 Runnable과 달리 return값을 받을 수 있음.
     Future : 비동기적인 작업의 현재 상태를 조회하거나 결과를 가져올 수있음.
  */
-public class Class12 {
+public class Class12_future {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         ExecutorService es_1 = Executors.newFixedThreadPool(2);
         Future<String> basic = es_1.submit(getCallable("Callable basic")); // <-- sub thread 실행

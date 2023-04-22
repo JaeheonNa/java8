@@ -1,10 +1,9 @@
 package com.study.java8;
 
-import java.util.function.BiFunction;
 import java.util.function.Function;
 
 // 자바에서 제공하는 함수형 인터페이스
-public class Class2 {
+public class Class2_functionalInterface_java {
     public static void main(String[] args){
         // apply라는 추상 메서드가 정의된 Function Interface.
         Function<Integer, Integer> plus10 = (num) -> num+10;

@@ -3,7 +3,7 @@ package com.study.java8;
 import java.util.*;
 
 // Java에서 제공하는 디폴트 메소드와 스태틱 메소드
-public class Class5 {
+public class Class5_defaultMethod_staticMethod_java {
     public static void main(String[] args){
         List<String> names = new ArrayList<>();
         names.add("IronMan");

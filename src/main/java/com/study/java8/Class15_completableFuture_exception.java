@@ -1,7 +1,5 @@
 package com.study.java8;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
@@ -18,7 +16,7 @@ import java.util.concurrent.ExecutionException;
         3. get()을 하기 전까지 다른 작업을 할 수 없음.
 
  */
-public class Class15 {
+public class Class15_completableFuture_exception {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         boolean isError = false;
 

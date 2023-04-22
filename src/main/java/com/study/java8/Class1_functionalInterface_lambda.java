@@ -2,7 +2,7 @@ package com.study.java8;
 
 
 // 함수형 인터페이스와 람다 표현식 소개.
-public class Class1 {
+public class Class1_functionalInterface_lambda {
     public static void main(String[] args){
         // 함수형 인터페이스를 구현할 때 쓸 수 있는 람다 표현식.
         // RunSomething이라는 인터페이스는 함수형 인터페이스로서 안에 구현해야할 추상 메소드가 하나 존재.

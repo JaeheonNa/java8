@@ -14,7 +14,7 @@ import java.util.Optional;
 // Primitive type용 Optional은 따로 있음. ex) OnptionalInt, OptionalLong ,,,
 // Optional이 리턴 타입인 메소드에서 null을 리턴하지 말라. 필요하다면 Optional.empty() 리턴.
 // Collection, Map, Stream, Optional은 Optional로 감싸지 말 것.
-public class Class8 {
+public class Class8_optional {
     public static void main(String[] args){
         Hero ironMan = new Hero("IronMan", "Avengers", "Human", "M");
         Hero spiderMan = new Hero("SpiderMan", "Avengers", "Human", "M");
@@ -87,7 +87,7 @@ public class Class8 {
         hero.ifPresent(h -> System.out.println("ifPresent() : " + h.getName())); // 존재하면, consumer 수행.
         Hero hero_1 = hero.orElse(getUnknownHero()); // 존재하면 Hero을 꺼내고, 다른 Hero를 꺼냄.
         System.out.println("orElse() : " + hero_1.getName());
-        Hero hero_2 = hero.orElseGet(Class8::getUnknownHero); // 존재하면 Hero를 꺼내고, 존재하지 않으면 메서드 실행.
+        Hero hero_2 = hero.orElseGet(Class8_optional::getUnknownHero); // 존재하면 Hero를 꺼내고, 존재하지 않으면 메서드 실행.
         System.out.println("orElseGet() : " + hero_2.getName());
         Hero hero_3 = hero.orElseThrow(() -> new RuntimeException()); // 존재하면 Hero를 꺼내고, 존재하지 않으면 예외.
         System.out.println("orElseThrow() : " + hero_3.getName());

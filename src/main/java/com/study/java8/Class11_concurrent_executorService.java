@@ -11,7 +11,7 @@ import java.util.concurrent.*;
 
     Executor 별로 관리하는 스레드 풀이 다름. 당연히 관리하는 스레드도 다름.
  */
-public class Class11 {
+public class Class11_concurrent_executorService {
     public static void main(String[] args) throws InterruptedException {
         // Executor 관련 객체는 Executors에서 생성함.
 

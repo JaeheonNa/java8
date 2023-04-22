@@ -1,13 +1,12 @@
 package com.study.java8;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
 // 메소드 레퍼런스
-public class Class3 {
+public class Class3_methodReference {
     public static void main(String[] args){
         // 일반적인 함수형 인터페이스 사용.
         Function<Integer, String> myAgeIs = (i) -> "My age is " + i;

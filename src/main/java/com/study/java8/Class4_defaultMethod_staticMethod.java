@@ -2,7 +2,7 @@ package com.study.java8;
 
 
 // 인터페이스의 디폴트 메소드와 스태틱 메소드
-public class Class4 {
+public class Class4_defaultMethod_staticMethod {
     public static void main(String[] args){
         DefaultAndStatic defaultAndStatic = new DefaultAndStaticImpl("Jaeheon");
         defaultAndStatic.printName(); // 직접 구현한 메소드

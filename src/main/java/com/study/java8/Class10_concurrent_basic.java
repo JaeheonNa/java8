@@ -6,7 +6,7 @@ package com.study.java8;
     멀티 스레딩은 실행 순서 보장이 안 됨.
     아래를 보면 알겠지만 Java8 이전의 멀티스레딩 코드는 너무 복잡함.
  */
-public class Class10 {
+public class Class10_concurrent_basic {
     public static void main(String[] args) throws InterruptedException {
         /*
             멀티 스레딩을 하는 첫 번째 방법.
