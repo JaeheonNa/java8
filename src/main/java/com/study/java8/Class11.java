@@ -45,6 +45,19 @@ public class Class11 {
         // thread 작업 주기적으로 반복 시키기.
         ScheduledExecutorService sesIter = Executors.newSingleThreadScheduledExecutor();
         sesIter.scheduleAtFixedRate(getRunnable("Iterator"), 1, 1, TimeUnit.SECONDS);
+
+
+        System.out.println("I'm main thread!");
+        ExecutorService finalEs = Executors.newSingleThreadExecutor();
+        finalEs.execute(() -> {
+            try {
+                Thread.sleep(3000L);
+                System.out.println("I'm sub thread!");
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        System.out.println("I'm main thread!");
     }
 
     public static Runnable getRunnable(String name){
