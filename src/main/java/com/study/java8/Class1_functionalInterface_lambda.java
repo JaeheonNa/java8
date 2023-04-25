@@ -5,8 +5,8 @@ package com.study.java8;
 public class Class1_functionalInterface_lambda {
     public static void main(String[] args){
         // 함수형 인터페이스를 구현할 때 쓸 수 있는 람다 표현식.
-        // RunSomething이라는 인터페이스는 함수형 인터페이스로서 안에 구현해야할 추상 메소드가 하나 존재.
-        // runSomething이라는 객체는 아래와 같이 추상 메서드가 정의돼 있음을 정의.
+        // Functional_noArgs이라는 인터페이스는 함수형 인터페이스로서 안에 구현해야할 추상 메소드(doIt())가 하나 존재.
+        // functional_noArgs이라는 객체는 아래와 같이 추상 메서드가 정의돼 있음을 정의.
         Functional_noArgs functional_noArgs = () -> {
             System.out.println("Hello");
             System.out.println("My name is Jaeheon");
